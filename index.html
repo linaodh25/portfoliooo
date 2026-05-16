@@ -118,6 +118,7 @@ section{padding:5rem 3rem;position:relative;z-index:1}
 .pcard-desc{font-size:.9rem;color:var(--ink2);flex:1;margin-bottom:1.2rem;line-height:1.65}
 .ptags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.2rem}
 .pt{font-size:.68rem;font-weight:600;padding:.25rem .65rem;border-radius:4px;background:#f4f4f8;color:var(--ink3);border:1px solid #e8e8f0}
+.acc-badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.68rem;font-weight:700;padding:.2rem .65rem;border-radius:20px;background:rgba(34,197,94,.1);color:#15803d;border:1px solid rgba(34,197,94,.25);margin-bottom:.8rem}
 .plink{display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:600;color:var(--red);text-decoration:none;margin-top:auto;transition:gap .2s}
 .plink:hover{gap:.7rem}
 .plink svg{width:14px;height:14px}
@@ -254,6 +255,20 @@ footer span{color:var(--coral)}
   </div>
   <div class="pgrid reveal" id="pgrid">
 
+    <!-- ── APPLIANCE CLASSIFICATION (NEW) ── -->
+    <div class="pcard" data-cat="done">
+      <div class="pcard-top">
+        <span class="sbadge s-done">Completed</span>
+        <div class="pring"><svg width="42" height="42" viewBox="0 0 42 42"><circle class="p-track" cx="21" cy="21" r="16" stroke-dasharray="100" stroke-dashoffset="0"/><circle class="p-bar" cx="21" cy="21" r="16" stroke-dasharray="100" stroke-dashoffset="0"/></svg><span class="p-num">100%</span></div>
+      </div>
+      <h3 class="pcard-title">Appliance Power Classification ⚡</h3>
+      <div class="acc-badge">🏆 88% Test Accuracy — Kaggle</div>
+      <p class="pcard-desc">End-to-end time series classification of 10 home appliance categories from raw power signals. Combined ROCKET/MiniRocket convolutional features, DTW-KNN meta-features and Catch22 in a leak-free OOF stacking pipeline with Optuna-tuned Random Forest.</p>
+      <div class="ptags"><span class="pt">Python</span><span class="pt">ROCKET</span><span class="pt">Optuna</span><span class="pt">LightGBM</span><span class="pt">XGBoost</span><span class="pt">DTW</span><span class="pt">Kaggle</span></div>
+      <a href="https://github.com/linaodh25/appliance-classification" target="_blank" class="plink">View on GitHub <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+    </div>
+
+    <!-- ── TSA SUICIDE RATE ── -->
     <div class="pcard" data-cat="done">
       <div class="pcard-top">
         <span class="sbadge s-done">Completed</span>
@@ -265,6 +280,7 @@ footer span{color:var(--coral)}
       <a href="https://github.com/linaodh25/TSA-Suicide-Rate-Hungary" target="_blank" class="plink">View on GitHub <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
     </div>
 
+    <!-- ── DAYFLOW ── -->
     <div class="pcard" data-cat="done">
       <div class="pcard-top">
         <span class="sbadge s-done">Completed</span>
@@ -276,17 +292,55 @@ footer span{color:var(--coral)}
       <a href="https://github.com/linaodh25/DayFlow" target="_blank" class="plink">View on GitHub <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
     </div>
 
+    <!-- ── STORIUM ── -->
     <div class="pcard" data-cat="done">
       <div class="pcard-top">
         <span class="sbadge s-done">Completed</span>
         <div class="pring"><svg width="42" height="42" viewBox="0 0 42 42"><circle class="p-track" cx="21" cy="21" r="16" stroke-dasharray="100" stroke-dashoffset="0"/><circle class="p-bar" cx="21" cy="21" r="16" stroke-dasharray="100" stroke-dashoffset="0"/></svg><span class="p-num">100%</span></div>
       </div>
       <h3 class="pcard-title">Storium — Inventory System 📦</h3>
-      <p class="pcard-desc">Full-scale warehouse management platform for entities with multiple clients, products and locations. Robust PHP + SQL backend with clean software architecture.</p>
+      <p class="pcard-desc">Industry-standard inventory management system designed to help any entity effectively organise, track and automate operations on their inventory. Robust PHP + SQL backend with clean software architecture.</p>
       <div class="ptags"><span class="pt">PHP</span><span class="pt">SQL</span><span class="pt">Full-Stack</span><span class="pt">Software Engineering</span></div>
       <a href="https://github.com/linaodh25/Storium-SE-Project" target="_blank" class="plink">View on GitHub <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
     </div>
 
+    <!-- ── URL SANDBOX (moved to completed) ── -->
+    <div class="pcard" data-cat="done">
+      <div class="pcard-top">
+        <span class="sbadge s-done">Completed</span>
+        <div class="pring"><svg width="42" height="42" viewBox="0 0 42 42"><circle class="p-track" cx="21" cy="21" r="16" stroke-dasharray="100" stroke-dashoffset="0"/><circle class="p-bar" cx="21" cy="21" r="16" stroke-dasharray="100" stroke-dashoffset="0"/></svg><span class="p-num">100%</span></div>
+      </div>
+      <h3 class="pcard-title">URL SandBox 🔍</h3>
+      <p class="pcard-desc">Browser-based sandbox that detects malicious URLs by analyzing JavaScript behavior, network requests and threat intelligence APIs — returning a 0–100 risk score with full evidence-based forensic reports.</p>
+      <div class="ptags"><span class="pt">Docker</span><span class="pt">Python</span><span class="pt">JavaScript</span><span class="pt">Forensics</span><span class="pt">Security</span></div>
+      <a href="#" class="plink">View on GitHub <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+    </div>
+
+    <!-- ── RESEARCH MATCHING (moved to completed) ── -->
+    <div class="pcard" data-cat="done">
+      <div class="pcard-top">
+        <span class="sbadge s-done">Completed</span>
+        <div class="pring"><svg width="42" height="42" viewBox="0 0 42 42"><circle class="p-track" cx="21" cy="21" r="16" stroke-dasharray="100" stroke-dashoffset="0"/><circle class="p-bar" cx="21" cy="21" r="16" stroke-dasharray="100" stroke-dashoffset="0"/></svg><span class="p-num">100%</span></div>
+      </div>
+      <h3 class="pcard-title">Research Matching Platform 🎓</h3>
+      <p class="pcard-desc">Desktop application connecting ENSIA students with research supervisors using AI-enhanced matching algorithms and automated API scraping — eliminating the manual search for research supervisors.</p>
+      <div class="ptags"><span class="pt">React</span><span class="pt">TypeScript</span><span class="pt">Python</span><span class="pt">Node.js</span><span class="pt">API Scraping</span></div>
+      <a href="#" class="plink">View on GitHub <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+    </div>
+
+    <!-- ── TSA GROUP PROJECT (NEW, completed) ── -->
+    <div class="pcard" data-cat="done">
+      <div class="pcard-top">
+        <span class="sbadge s-done">Completed</span>
+        <div class="pring"><svg width="42" height="42" viewBox="0 0 42 42"><circle class="p-track" cx="21" cy="21" r="16" stroke-dasharray="100" stroke-dashoffset="0"/><circle class="p-bar" cx="21" cy="21" r="16" stroke-dasharray="100" stroke-dashoffset="0"/></svg><span class="p-num">100%</span></div>
+      </div>
+      <h3 class="pcard-title">TSA — Appliance Classification 🔬</h3>
+      <p class="pcard-desc">Collaborative time series classification project. Contributed to feature engineering, model benchmarking and cross-validation protocol design for power consumption signal analysis across 10 appliance categories.</p>
+      <div class="ptags"><span class="pt">Python</span><span class="pt">R</span><span class="pt">Scikit-Learn</span><span class="pt">Pandas</span><span class="pt">Time Series</span></div>
+      <a href="#" class="plink">View on GitHub <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+    </div>
+
+    <!-- ── AI JOB MATCHING ── -->
     <div class="pcard" data-cat="done">
       <div class="pcard-top">
         <span class="sbadge s-done">Completed</span>
@@ -297,26 +351,7 @@ footer span{color:var(--coral)}
       <div class="ptags"><span class="pt">Python</span><span class="pt">CSP</span><span class="pt">Backtracking</span><span class="pt">AI</span></div>
     </div>
 
-    <div class="pcard" data-cat="wip">
-      <div class="pcard-top">
-        <span class="sbadge s-wip">In Progress</span>
-        <div class="pring"><svg width="42" height="42" viewBox="0 0 42 42"><circle class="p-track" cx="21" cy="21" r="16"/><circle class="p-bar" cx="21" cy="21" r="16" stroke-dasharray="90 10"/></svg><span class="p-num">90%</span></div>
-      </div>
-      <h3 class="pcard-title">URL SandBox 🔍</h3>
-      <p class="pcard-desc">Forensics tool for analyzing malicious URL behavior and generating evidence-based reports. Docker containerization + Python behavioral analysis engine.</p>
-      <div class="ptags"><span class="pt">Docker</span><span class="pt">Python</span><span class="pt">Forensics</span><span class="pt">Security</span></div>
-    </div>
-
-    <div class="pcard" data-cat="wip">
-      <div class="pcard-top">
-        <span class="sbadge s-wip">In Progress</span>
-        <div class="pring"><svg width="42" height="42" viewBox="0 0 42 42"><circle class="p-track" cx="21" cy="21" r="16"/><circle class="p-bar" cx="21" cy="21" r="16" stroke-dasharray="80 20"/></svg><span class="p-num">80%</span></div>
-      </div>
-      <h3 class="pcard-title">Research Matching Platform 🎓</h3>
-      <p class="pcard-desc">AI platform connecting ENSIA students with research supervisors via automated API scraping and smart matching algorithms.</p>
-      <div class="ptags"><span class="pt">React</span><span class="pt">TypeScript</span><span class="pt">Python</span><span class="pt">API Scraping</span></div>
-    </div>
-
+    <!-- ── INTELLICANTEEN (WIP) ── -->
     <div class="pcard" data-cat="wip">
       <div class="pcard-top">
         <span class="sbadge s-wip">In Progress</span>
@@ -327,6 +362,7 @@ footer span{color:var(--coral)}
       <div class="ptags"><span class="pt">Scikit-Learn</span><span class="pt">FastAPI</span><span class="pt">MLOps</span><span class="pt">Python</span></div>
     </div>
 
+    <!-- ── E-COMMERCE (WIP) ── -->
     <div class="pcard" data-cat="wip">
       <div class="pcard-top">
         <span class="sbadge s-wip">In Progress</span>
